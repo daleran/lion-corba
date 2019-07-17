@@ -1,0 +1,18 @@
+module LionCobra {
+  struct Student {
+    long studID;
+    string name;
+    string ssn;
+    string emailAddress;
+    string homePhone;
+    string localAddr;
+    string emergencyContact;
+    long programID;
+    string paymentID;
+    long academicStatus;
+  };
+
+  interface StudentDB {
+    Student addToDB(in Student stu);
+  };
+};
